@@ -1,0 +1,9 @@
+com\automate\framework\pages\BasePage.class
+com\automate\framework\driver\DriverFactory.class
+com\automate\framework\pages\LoginPage.class
+com\automate\framework\runner\RunCucumberTest.class
+com\automate\framework\config\FrameworkConfig.class
+com\automate\framework\driver\DriverManager.class
+com\automate\framework\hooks\ScenarioHooks.class
+com\automate\framework\pages\InventoryPage.class
+com\automate\framework\steps\LoginSteps.class
