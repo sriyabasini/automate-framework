@@ -1,0 +1,28 @@
+{
+  "name": "flipkart-playwright-bdd",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright TypeScript BDD framework for ecommerce flows",
+  "scripts": {
+    "setup:test-data": "ts-node scripts/create-test-data.ts",
+    "pretest": "node -e \"require('node:fs').mkdirSync('reports', { recursive: true })\"",
+    "pretest:orders": "node -e \"require('node:fs').mkdirSync('reports', { recursive: true })\"",
+    "pretest:dry": "node -e \"require('node:fs').mkdirSync('reports', { recursive: true })\"",
+    "test": "cucumber-js",
+    "test:orders": "cucumber-js --tags @orderPlacement",
+    "test:dry": "cucumber-js --dry-run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@cucumber/cucumber": "^13.3.0",
+    "cucumber-js-extent": "^0.1.0",
+    "dotenv": "^18.0.7",
+    "exceljs": "^4.4.0",
+    "playwright": "^1.64.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
