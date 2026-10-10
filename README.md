@@ -7,6 +7,11 @@ This repository contains two independent BDD automation examples:
 
 ## Playwright TypeScript framework
 
+For Gherkin syntax highlighting and step-definition navigation in VS Code, install the
+workspace-recommended **Cucumber (Gherkin) Full Support** extension. The workspace
+associates `.feature` files with the extension's `feature` language and points it to
+`PlaywrightUi/src/steps/**/*.ts`.
+
 ```text
 PlaywrightUi/
 ├── features/                # Gherkin shopping, account, and order flows

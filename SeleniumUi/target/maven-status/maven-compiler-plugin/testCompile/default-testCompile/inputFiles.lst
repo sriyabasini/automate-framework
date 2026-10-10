@@ -1,9 +1,0 @@
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\config\FrameworkConfig.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\driver\DriverFactory.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\driver\DriverManager.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\hooks\ScenarioHooks.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\pages\BasePage.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\pages\InventoryPage.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\pages\LoginPage.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\runner\RunCucumberTest.java
-D:\UI_Project\ProjectCode\automate-framework\SeleniumUi\src\test\java\com\automate\framework\steps\LoginSteps.java
