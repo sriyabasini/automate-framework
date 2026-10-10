@@ -39,6 +39,8 @@ npm test
 
 Edit `test-data/flipkart-test-data.xlsx` to provide registered test-account credentials and any test-store address details. The workbook has rows for guest price searches below ₹10,000 and above ₹50,000, valid and invalid login, and order placement. Set `FLIPKART_BASE_URL`, `BROWSER`, `HEADLESS`, and `TEST_DATA_FILE` in `.env` as needed; `.env.example` documents the options.
 
+Browser runs are visible by default (`HEADLESS=false`). To run without a visible browser, set `HEADLESS=true` in `PlaywrightUi/.env` or in the shell environment.
+
 The Cucumber Extent Spark report and Cucumber JSON report are written to `PlaywrightUi/reports/`. Use `npm run typecheck` for TypeScript validation and `npm run test:dry` to validate Gherkin/step wiring without opening a browser.
 
 Order placement is opt-in and protected: it is disabled by default and refuses to run against `flipkart.com` or any Flipkart production subdomain. Only enable `ALLOW_ORDER_SUBMISSION=true` for a non-production test store with test payment data; OTPs and real payments are not automated. Public Flipkart may change its UI or block automation, so selectors and checkout fields may need adaptation to the target test environment.

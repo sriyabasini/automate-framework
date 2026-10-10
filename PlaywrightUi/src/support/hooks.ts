@@ -1,6 +1,8 @@
-import { After, Before, Status } from "@cucumber/cucumber";
+import { After, Before, setDefaultTimeout, Status } from "@cucumber/cucumber";
 import { frameworkConfig } from "../config/frameworkConfig";
 import { FrameworkWorld } from "./world";
+
+setDefaultTimeout(frameworkConfig.navigationTimeoutMs * 2);
 
 function assertOrderSubmissionIsSafe(): void {
   if (!frameworkConfig.allowOrderSubmission) {

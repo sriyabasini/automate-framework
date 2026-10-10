@@ -3,6 +3,11 @@ Feature: Flipkart mobile shopping
   I want to find mobile phones, manage my cart and complete checkout
   So that I can verify the shopping journey
 
+  @smoke
+  Scenario: Application launches successfully
+    Given the Flipkart application is open
+    Then the application page is displayed
+
   Scenario: Guest searches for a mobile below 10000 and adds it to the cart
     Given the Flipkart application is open
     When the guest searches using test data "guest-under-10000"

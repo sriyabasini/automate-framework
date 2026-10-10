@@ -12,7 +12,7 @@ const booleanFromEnv = (name: string, fallback: boolean): boolean => {
 export const frameworkConfig = {
   baseUrl: process.env.FLIPKART_BASE_URL ?? "https://www.flipkart.com/",
   browser: process.env.BROWSER ?? "chromium",
-  headless: booleanFromEnv("HEADLESS", true),
+  headless: booleanFromEnv("HEADLESS", false),
   testDataFile: process.env.TEST_DATA_FILE ?? "test-data/flipkart-test-data.xlsx",
   allowOrderSubmission: booleanFromEnv("ALLOW_ORDER_SUBMISSION", false),
   navigationTimeoutMs: 30_000

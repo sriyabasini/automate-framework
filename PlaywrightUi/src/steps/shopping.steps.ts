@@ -8,6 +8,14 @@ Given("the Flipkart application is open", async function (this: FrameworkWorld) 
   await new HomePage(this.getPage()).open();
 });
 
+Then("the application page is displayed", async function (this: FrameworkWorld) {
+  const page = this.getPage();
+  if (page.url() === "about:blank") {
+    throw new Error("The application page did not open");
+  }
+  await page.locator("body").waitFor({ state: "visible" });
+});
+
 When("the guest searches using test data {string}", async function (this: FrameworkWorld, id: string) {
   this.scenarioData = await this.testData.getScenario(id);
   await new HomePage(this.getPage()).search(this.scenarioData.searchTerm);
